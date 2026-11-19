@@ -1,0 +1,168 @@
+{
+  "sections": [
+    {
+      "id": "disposiciones-generales",
+      "number": "I",
+      "title": "Disposiciones Generales",
+      "articles": [
+        {
+          "number": 1,
+          "text": "El presente reglamento tiene como objetivo establecer las normas y procedimientos para la gestión y cumplimiento al interior del fraccionamiento privado."
+        },
+        {
+          "number": 2,
+          "text": "El reglamento es de aplicación obligatoria para todos los propietarios, residentes y visitantes del fraccionamiento."
+        }
+      ]
+    },
+    {
+      "id": "uso-de-las-instalaciones",
+      "number": "II",
+      "title": "Uso de las Instalaciones",
+      "articles": [
+        {
+          "number": 3,
+          "text": "Las instalaciones comunes del fraccionamiento, como áreas verdes, áreas comunes, etc., serán utilizadas de acuerdo a las normas y horarios establecidos."
+        },
+        {
+          "number": 4,
+          "text": "Queda prohibido realizar actividades que dañen o deterioren las instalaciones."
+        },
+        {
+          "number": 5,
+          "text": "La entrada de vehículos motorizados será solo por la reja principal del fraccionamiento."
+        },
+        {
+          "number": 6,
+          "text": "Las entradas peatonales son exclusivas para uso peatonal. Pueden pasar bicicletas, pero bajándose de éstas."
+        }
+      ]
+    },
+    {
+      "id": "mantenimiento-y-conservacion",
+      "number": "III",
+      "title": "Mantenimiento y Conservación",
+      "articles": [
+        {
+          "number": 7,
+          "text": "Los propietarios serán responsables del mantenimiento y conservación del buen aspecto de sus viviendas. Por ejemplo, queda prohibido tener tendederos de ropa o dejar basura en el frente de la vivienda."
+        },
+        {
+          "number": 8,
+          "text": "La administración del fraccionamiento se encargará del mantenimiento y conservación de las áreas comunes. Se recolecta una cuota anual (esta se estima de acuerdo a la cantidad de casas vendidas y lo planificado por el comité a lo largo del año), por el momento, para el mantenimiento de la Reja, Motor de la reja, Cámaras e Internet."
+        },
+        {
+          "number": 9,
+          "text": "La administración del fraccionamiento se encargará de recibir una cuota destinada para el mantenimiento del mismo. La periodicidad y monto de la cuota se establecerá según lo acordado en las reuniones vecinales."
+        },
+        {
+          "number": 10,
+          "text": "El camión recolector de basura pasa los días Martes, Jueves y Sábados, aproximadamente a las 08:00 horas, por lo que la basura deben de tenerla lista un poco antes. Esta deberá estar en bolsas bien selladas/amarradas en la entrada de sus casas o bien, dentro de algún bote o contenedor de basura para evitar el esparcimiento de la misma sobre la acera o calle."
+        },
+        {
+          "number": 11,
+          "text": "Los propietarios que saquen a sus mascotas de paseo, tendrán que llevarlas con correa y recoger las heces de las mismas."
+        },
+        {
+          "number": 12,
+          "text": "Se tiene permitido realizar convivios dentro de la vivienda del propietario, sin embargo, a las 23:00 horas se tendrá que cesar el ruido en el exterior y continuar al interior de ésta, sin alterar el orden público."
+        },
+        {
+          "number": 13,
+          "text": "Queda prohibido el realizar fiestas fuera de la vivienda, es decir, en la calle."
+        },
+        {
+          "number": 14,
+          "text": "En caso de que el propietario realizara modificaciones a la vivienda, como pintar o remodelar, se debe de respetar el mismo concepto de fachadas del fraccionamiento."
+        },
+        {
+          "number": 15,
+          "text": "El propietario tendrá que acudir a las reuniones vecinales."
+        }
+      ]
+    },
+    {
+      "id": "seguridad",
+      "number": "IV",
+      "title": "Seguridad",
+      "articles": [
+        {
+          "number": 16,
+          "text": "La seguridad del fraccionamiento será responsabilidad de la administración y los propietarios."
+        },
+        {
+          "number": 17,
+          "text": "Queda prohibido ingresar al fraccionamiento sin autorización."
+        },
+        {
+          "number": 18,
+          "text": "Los horarios establecidos en el que la reja se encuentra abierta son los siguientes:",
+          "items": [
+            "Lunes a viernes de 06:00 a 17:00 horas.",
+            "Sábados de 06:00 a 13:00 horas.",
+            "Domingos cerrada."
+          ]
+        },
+        {
+          "number": 19,
+          "text": "El control y llaves de acceso al fraccionamiento, son de uso exclusivo para los residentes o parientes inmediatos del propietario de la casa."
+        },
+        {
+          "number": 20,
+          "text": "Manejar a baja velocidad, 20 Km/h y con precaución dentro del fraccionamiento."
+        }
+      ]
+    },
+    {
+      "id": "sanciones",
+      "number": "V",
+      "title": "Sanciones",
+      "articles": [
+        {
+          "number": 21,
+          "text": "El incumplimiento del presente reglamento será sancionado de acuerdo a la gravedad de la infracción."
+        }
+      ]
+    }
+  ],
+  "sanctions": [
+    {
+      "title": "Incumplimiento bajo",
+      "items": [
+        "No recoger basura o tener basura fuera de los días de recolección: $500.00 MXN.",
+        "Colocar tendederos al frente de la vivienda: $500.00 MXN."
+      ]
+    },
+    {
+      "title": "Incumplimiento moderado",
+      "items": [
+        "Ruido excesivo al exterior de la vivienda, después del horario establecido: $1,000.00 MXN."
+      ]
+    },
+    {
+      "title": "Incumplimiento grave",
+      "items": [
+        "Daño a propiedades de áreas comunes: $2,000.00 MXN más el costo de la reparación.",
+        "Exceso de velocidad: $3,000.00 MXN. En caso de ocasionar un percance, el autor o autores se harán cargo de cubrir los gastos y se llamarán a las autoridades según sea el caso."
+      ]
+    }
+  ],
+  "incidents": [
+    "Choques o colisiones: Pueden ser frontales, laterales, traseros o múltiples, y pueden darse entre dos vehículos o entre un vehículo y un objeto grande.",
+    "Volcamientos: Se producen cuando un vehículo en movimiento se vuelca y se desplaza hacia el lado contrario.",
+    "Atropellos: Se producen cuando un vehículo en movimiento arrolla a uno o más peatones.",
+    "Accidentes de tránsito fatales: Son aquellos en los que una o más personas mueren."
+  ],
+  "warnings": {
+    "paragraphs": [
+      "Antes de poder aplicarse una sanción, el propietario o residentes deben de tener dos advertencias.",
+      "Una advertencia debe de cumplir con los siguientes puntos:"
+    ],
+    "items": [
+      "Notificación al propietario o residente",
+      "Testimonios",
+      "Evidencias (Fotos y/o videos)",
+      "Documentar el proceso"
+    ]
+  }
+}

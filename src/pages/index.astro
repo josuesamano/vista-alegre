@@ -1,0 +1,129 @@
+---
+import rulebook from '../content/reglamento.json';
+import '../styles/reglamento.css';
+
+const base = import.meta.env.BASE_URL.replace(/\/$/, '');
+const logo = `${base}/logo.webp`;
+const pdf = `${base}/reglamento.pdf`;
+const gateArticle = rulebook.sections.flatMap((section) => section.articles)
+  .find((article) => article.number === 18);
+---
+
+<!doctype html>
+<html lang="es-MX">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="description" content="Consulta los 21 artículos, horarios y sanciones del Reglamento del Fraccionamiento Vista Alegre." />
+    <meta name="theme-color" content="#ffffff" />
+    <title>Reglamento | Fraccionamiento Vista Alegre</title>
+  </head>
+  <body id="inicio">
+    <a class="skip-link" href="#reglamento">Ir al reglamento</a>
+    <header class="topbar">
+      <div class="shell topbar-inner">
+        <a class="brand" href="#inicio">
+          <img src={logo} alt="Fraccionamiento Vista Alegre" width="586" height="324" />
+        </a>
+        <a class="pdf-link" href={pdf} download>Descargar PDF</a>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero shell" aria-labelledby="titulo">
+        <h1 id="titulo">Reglamento</h1>
+        <p class="revision">Última revisión <time datetime="2024-09-02">2 de septiembre de 2024</time></p>
+      </section>
+
+      <div class="shell">
+        <nav class="quick-links" aria-labelledby="consulta-rapida">
+          <h2 id="consulta-rapida">Consulta rápida</h2>
+          <div class="quick-grid">
+            <a class="quick-card" href="#articulo-10">
+              <span class="quick-label">Recolección de basura</span>
+              <strong>Mar., jue. y sáb.</strong>
+              <span>Alrededor de las 08:00 h</span>
+            </a>
+            {gateArticle && (
+              <a class="quick-card" href={`#articulo-${gateArticle.number}`}>
+                <span class="quick-label">Horario de la reja</span>
+                <ul class="gate-schedule" role="list">
+                  {gateArticle.items?.map((item) => <li>{item}</li>)}
+                </ul>
+              </a>
+            )}
+            <a class="quick-card" href="#articulo-12">
+              <span class="quick-label">Convivios en casa</span>
+              <strong>23:00 h</strong>
+              <span>Hora para cesar el ruido exterior</span>
+            </a>
+          </div>
+        </nav>
+
+        <div class="reading-layout">
+          <aside>
+            <nav class="index" aria-labelledby="indice">
+              <h2 id="indice">Índice</h2>
+              <ol>
+                {rulebook.sections.map((section) => (
+                  <li>
+                    <a href={`#${section.id}`}>
+                      <span class="index-number" aria-hidden="true">{section.number}</span>
+                      <span>{section.title}</span>
+                    </a>
+                  </li>
+                ))}
+              </ol>
+            </nav>
+          </aside>
+
+          <div class="rulebook" id="reglamento" tabindex="-1">
+            {rulebook.sections.map((section) => (
+              <section class="rule-section" id={section.id} aria-labelledby={`${section.id}-titulo`}>
+                <header class="section-heading">
+                  <p class="eyebrow">Sección {section.number}</p>
+                  <h2 id={`${section.id}-titulo`}>{section.title}</h2>
+                </header>
+                {section.articles.map((article) => (
+                  <div class="rule-article" id={`articulo-${article.number}`}>
+                    <h3>Artículo {article.number}</h3>
+                    <p>{article.text}</p>
+                    {article.items && <ul>{article.items.map((item) => <li>{item}</li>)}</ul>}
+                  </div>
+                ))}
+
+                {section.id === 'sanciones' && (
+                  <div class="sanctions">
+                    <h3>Tipos de sanciones</h3>
+                    {rulebook.sanctions.map((group) => (
+                      <div class="sanction-group">
+                        <h4>{group.title}</h4>
+                        <ul>{group.items.map((item) => <li>{item}</li>)}</ul>
+                      </div>
+                    ))}
+
+                    <h4>Tipos de percances</h4>
+                    <ul>{rulebook.incidents.map((item) => <li>{item}</li>)}</ul>
+
+                    <div class="warnings">
+                      <h3>Advertencias</h3>
+                      {rulebook.warnings.paragraphs.map((paragraph) => <p>{paragraph}</p>)}
+                      <ul>{rulebook.warnings.items.map((item) => <li>{item}</li>)}</ul>
+                    </div>
+                  </div>
+                )}
+              </section>
+            ))}
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <footer>
+      <div class="shell footer-inner">
+        <span>Fraccionamiento Vista Alegre</span>
+        <a href="#inicio">Volver al inicio</a>
+      </div>
+    </footer>
+  </body>
+</html>
